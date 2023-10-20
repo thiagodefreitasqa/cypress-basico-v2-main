@@ -1,29 +1,62 @@
-# Testes automatizados com Cypress - Básico
+# Cypress Básico v2
 
-👋 Seja bem-vindo(a)!
+Bem-vindo ao repositório **Cypress Básico v2**! Este projeto é uma demonstração do conhecimento adquirido por meio do curso **"Testes Automatizados com Cypress Básico"** disponibilizado na plataforma Udemy, ministrado pelo mestre [Walmyr Souza Filho](https://www.udemy.com/user/walmyr/). Este repositório foi desenvolvido com base no curso mencionado, onde aprendi os fundamentos essenciais dos testes automatizados com o Cypress.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+## Objetivo do Projeto
 
-## O que você vai aprender
+O objetivo deste projeto é fornecer um guia básico e direto sobre como usar o Cypress para testes automatizados. Ele é perfeito para iniciantes que desejam aprender a criar testes E2E para suas aplicações web.
 
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+## Como Começar
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
+Siga estas etapas para começar com o Cypress Básico v2:
 
-## Vamos começar?
+1. **Fork do Repositório**: Comece criando um fork deste repositório para sua própria conta no GitHub. Clique em [**Fork**](https://github.com/wlsf82/cypress-basico-v2/fork) no canto superior direito da página para fazer uma cópia para sua conta.
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+2. **Clone o Repositório**: Clone o repositório forkado para sua máquina local usando o seguinte comando no terminal:
 
-___
+   ```
+   git clone https://github.com/seu-nome-de-usuário/cypress-basico-v2.git
+   ```
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+3. **Instale as Dependências**: Navegue até o diretório do projeto e instale as dependências usando npm ou yarn:
+
+   ```
+   cd cypress-basico-v2
+   npm install
+   # ou
+   yarn install
+   ```
+
+4. **Execute os Testes**: Após a instalação das dependências, você pode executar os testes usando o Cypress. Execute o comando a seguir:
+
+   ```
+   npx cypress open
+   ```
+
+   Isso abrirá a interface do Cypress, onde você pode selecionar e executar os testes.
+
+## Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+
+- `cypress/integration`: Este diretório contém os arquivos de teste Cypress. Você pode adicionar seus próprios testes aqui.
+
+- `cypress/support`: Este diretório contém arquivos de suporte, como comandos personalizados do Cypress.
+
+- `cypress/plugins`: Este diretório contém plugins Cypress.
+
+- `cypress.json`: Arquivo de configuração do Cypress.
+
+## Contribuição
+
+Se você encontrar bugs ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**. Estamos mais do que felizes em receber contribuições.
+
+## Licença
+
+Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+Divirta-se explorando o mundo do Cypress e aprendendo sobre testes automatizados! Se você tiver alguma dúvida ou precisar de ajuda, não hesite em entrar em contato.
+
+**Happy testing!** 🚀

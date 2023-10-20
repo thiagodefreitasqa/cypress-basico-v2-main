@@ -2,7 +2,7 @@
 
 describe('Central de Atendimento ao Cliente TAT', function() {
     beforeEach(function() {
-      cy.visit('cypress-basico-v2-main/src/index.html')
+      cy.visit('./src/index.html')
     })
   
     it('verifica o título da aplicação', function() {
