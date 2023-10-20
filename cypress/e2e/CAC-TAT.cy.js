@@ -190,4 +190,29 @@ describe('Central de Atendimento ao Cliente TAT', function() {
             .invoke('removeAttr','target')
             .click()
     })
+// o teste a seguir preenche o campo de texto, com 200 caracteres
+    it('19 - Preenche a area de texto usando o comando invoke', function(){
+        const longText = Cypress._.repeat('123456789',20)
+        cy.get('#open-text-area')
+            .invoke('val',longText)
+            .should('have.value',longText)
+    })
+
+    it('20 - Faz uma requisição HTTP',function(){
+        cy.request('https://cac-tat.s3.eu-central-1.amazonaws.com/index.html')
+            .should(function(response){
+                const {status, statusText, body} = response
+                expect(status).to.equal(200)
+                expect(statusText).to.equal('OK')
+                expect(body).to.include('CAC TAT')
+
+        })
+    })
+    it('21 - Desafio encontra o gato',function(){
+        cy.get('#cat').invoke('show').should('be.visible')
+        cy.get('#title').invoke('text','CAT TAT')
+        cy.get('#subtitle').invoke('text','Eu 🧡 gatos')
+
+        })
+
 })
